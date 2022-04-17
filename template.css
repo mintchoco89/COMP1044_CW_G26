@@ -1,0 +1,110 @@
+/*
+Colour Hex Codes:
+#e6e5da (Body colour)
+#FFFFFF (White)
+#000000 (Black)
+*/
+
+html
+{
+	height: 100%;
+	font-family: "Candara", sans-serif;
+}
+
+body 
+{
+	background-color: #e6e5da;
+	height: 100%;
+	margin: 0;
+	user-select: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+nav
+{	
+	background-color: white;
+	overflow: hidden;
+	height: 70px;
+	margin: 0;
+}
+
+nav ul
+{
+	text-align: center;
+}
+
+nav ul li
+{
+	display: inline-block;	
+	list-style-type: none;
+}
+
+nav a
+{
+	float: left;
+	text-align: center;
+	padding: 10px 15px;
+	width: 120px;
+	color: black; 
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+nav a.active
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+footer
+{
+	background-color: white;
+	overflow: hidden;
+	padding: 7px 15px;
+	font-size: 115%;
+	color: black;
+}
+
+footer .footerTable {
+	border-spacing: 10px;
+}
+
+footer .footerTable th,td {
+	padding-right: 350px;
+}
+
+footer .footerTable i {
+	padding: 10px 10px 0px 0px;
+}
+
+footer .footerTable p
+{
+	text-align: left;
+	font-size: 100%;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

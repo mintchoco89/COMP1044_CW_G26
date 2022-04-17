@@ -1,0 +1,46 @@
+
+.website-title-heading {
+	text-align: center;
+	font-family: "Book Antiqua", serif;
+	font-size: 250%;
+	letter-spacing: 3px;
+}
+
+.heading-horizontal-line {
+	text-align: center;
+	width: 5%;
+	border: 0.8px solid black;
+	background: black;
+}
+
+.flex-container {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.flex-items {
+	background-color: white;
+	width: 80%;
+	height: auto;
+	margin: 10px;
+	overflow: hidden;
+	padding: 40px;
+}
+
+.flex-items p {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 100%;
+	line-height: 130%;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+.flex-items ul {
+	line-height: 30px;
+}
+
+

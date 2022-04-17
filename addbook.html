@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="template.css">
+	<link rel="stylesheet" href="form-template.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>G26 Library - Add a New Book</title>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="categories.html">Categories</a></li>
+			<li><a href="#contact-link">Contact Us</a></li>
+			<li><a href="profile.php">My Profile</a></li>
+			<li><a href="login.html">Log Out</a></li>
+		</ul>
+	</nav>
+	
+	<br><br>
+	
+	<h2 class="page-title-heading">Add a New Book</h2>
+	<hr class="page-heading-horizontal-line">
+	
+	<br><br>
+	
+	<form class="forms" id="addbook-form" name="addbook-form" action="http://localhost/addbook.php" method="post">
+		<div class="left-side">
+			<label for="add-book-title">Book Title: &ensp;</label>
+				<input name="add-book-title" type="text" required></input><br>
+			<label for="add-book-category">Category: &ensp;</label>
+				<select name="add-book-category" form="addbook-form" required>
+					<option value="" disabled selected>Select a Category</option>
+					<option value="1">Periodical</option>
+					<option value="2">English</option>
+					<option value="3">Math</option>
+					<option value="4">Science</option>
+					<option value="5">Encyclopedia</option>
+					<option value="6">Filipiniana</option>
+					<option value="7">Newspaper</option>
+					<option value="8">General</option>
+					<option value="9">References</option>
+				</select><br>
+			<label for="add-book-author">Author: &ensp;</label>
+				<input name="add-book-author" type="text" required></input><br>
+			<label for="add-book-copies">Number of Copies: &ensp;</label>
+				<input name="add-book-copies" type="number" required></input><br>
+			<label for="add-book-publisher">Book Publisher: &ensp;</label>
+				<input name="add-book-publisher" type="text" required></input><br>
+			<label for="add-book-publisher-city">Publisher City: &ensp;</label>
+				<input name="add-book-publisher-city" type="text" required></input><br>
+		</div>
+		<div class="right-side">
+			<label for="add-book-isbn">ISBN: &ensp;</label>
+				<input name="add-book-isbn" type="text" required></input><br>
+			<label for="add-book-copyright-year">Copyright Year: &ensp;</label>
+				<input name="add-book-copyright-year" type="text" maxlength="4" required></input><br>
+			<label for="add-book-date-receive">Date Received: &ensp;</label>
+				<input name="add-book-date-receive" type="date" required></input><br>
+			<label for="add-book-date-added">Date Added: &ensp;</label>
+				<input name="add-book-date-added" type="date" required></input><br>
+			<label for="add-book-status">Status: &ensp;</label>
+				<select name="add-book-status" form="addbook-form" required>
+					<option value="" disabled selected>Select Book Status</option>
+					<option value="New">New</option>
+					<option value="Old">Old</option>
+					<option value="Damage">Damage</option>
+					<option value="Lost">Lost</option>
+					<option value="Archive">Archive</option>
+				</select><br>
+		</div>
+		
+		<button type="submit" form="addbook-form" name="submit" onclick="checkCopies()">Submit</button>
+	
+	</form>
+	
+	<script>
+	function checkCopies() {
+		let copies = document.forms["addbook-form"]["add-book-copies"].value;
+		if (copies < 1) {
+			alert("Number of copies cannot be less than 1.");
+			document.forms["addbook-form"]["add-book-copies"].value = "";
+		}
+	}
+	</script>
+	
+	<br><br><br><br>
+
+	<footer id="contact-link">
+	<table class="footerTable">
+		<tr>
+			<th>Address</th>
+			<th>Contact Us</th>
+		</tr>
+		<tr>
+			<td>University of Nottingham Malaysia<br>Jalan Broga<br>43500 Semenyih<br>Selangor Darul Ehsan<br>Malaysia<br><br></td>
+			<td><i class="fa fa-whatsapp"></i>+6012-345 6789<br><i class="fa fa-google"></i>g26library@gmail.com<br><i class="fa fa-facebook"></i> G26 Library<br><i class="fa fa-instagram"></i>g26_library<br><i class="fa fa-twitter"></i>g26_library</td>
+		</tr>
+	</table>
+	<p>&copy; 2022 COMP1044 Coursework 2 Group 26</p>
+	</footer>
+
+</body>
+
+</html>

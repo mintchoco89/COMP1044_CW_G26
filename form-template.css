@@ -1,0 +1,82 @@
+
+.page-title-heading {
+	text-align: center;
+	font-family: "Book Antiqua", serif;
+	font-size: 200%;
+	letter-spacing: 1px;
+}
+
+.page-heading-horizontal-line {
+	text-align: center;
+	width: 5%;
+	border: 0.8px solid black;
+	background: black;
+}
+
+.forms {
+	background-color: #f2f2eb;
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.forms input {
+	height: 15px;
+	padding: 5px;
+	font-size: 100%;
+	font-family: "Candara", sans-serif;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+.forms select {
+	height: 30px;
+	margin-bottom: 20px;
+	font-family: "Candara", sans-serif;
+	font-size: 100%;
+	width: 250px;
+}
+
+.forms input:focus, select:focus {
+	outline: none;
+}
+
+.forms .left-side, .right-side {
+	padding: 20px;
+}
+
+.forms .center {
+	padding: 20px 0px;
+	margin: auto;
+	text-align: left;
+	grid-column: 1 / span 2;
+	font-size: 120%;
+}
+
+.forms button {
+	grid-column: span 2;
+	margin: auto;
+	padding: 10px;
+	width: 30%;
+	margin-top: -30px;
+	margin-bottom: 20px;
+	background-color: white;
+	cursor: pointer;
+	border-style: 1px groove;
+	border-color: #e6e5da;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 90%;
+}
+
+.forms button:hover {
+	text-decoration: underline;
+	border-style: ridge;
+}
+
+
+
+
+

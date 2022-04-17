@@ -1,0 +1,64 @@
+
+.website-title-heading {
+	text-align: center;
+	font-family: "Book Antiqua", serif;
+	font-size: 250%;
+	letter-spacing: 3px;
+}
+
+.heading-horizontal-line {
+	text-align: center;
+	width: 5%;
+	border: 0.8px solid black;
+	background: black;
+}
+
+.website-title-description {
+	text-align: center;
+	letter-spacing: 1px;
+	text-decoration: italic;
+}
+
+.flex-container {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.flex-items {
+	background-color: white;
+	width: 250px;
+	height: 270px;
+	margin: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.flex-items a {
+	text-decoration: none;
+	color: black;
+}
+
+.flex-items img {
+	height: 70%;
+	width: 100%;
+}
+
+.flex-items p {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 100%;
+	line-height: 130%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.flex-items:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+	cursor: pointer;
+}
+

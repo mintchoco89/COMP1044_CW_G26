@@ -1,0 +1,21 @@
+
+.website-title-heading {
+	text-align: center;
+	font-family: "Book Antiqua", serif;
+	font-size: 250%;
+	letter-spacing: 3px;
+}
+
+.heading-horizontal-line {
+	text-align: center;
+	width: 5%;
+	border: 0.8px solid black;
+	background: black;
+}
+
+.website-title-description {
+	text-align: center;
+	letter-spacing: 1px;
+	text-decoration: italic;
+}
+
