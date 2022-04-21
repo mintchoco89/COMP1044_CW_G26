@@ -84,9 +84,19 @@
 				</select><br>
 		</div>
 		
-		<button type="submit" form="updatebook-form" name="submit">Submit</button>
+		<button type="submit" form="updatebook-form" name="submit" onclick="checkCopies()">Submit</button>
 	
 	</form>
+	
+	<script>
+	function checkCopies() {
+		let copies = document.forms["updatebook-form"]["update-book-copies"].value;
+		if (copies < 1) {
+			alert("Number of copies cannot be less than 1.");
+			document.forms["updatebook-form"]["update-book-copies"].value = "";
+		}
+	}
+	</script>
 	
 	<?php
 		$conn->close();

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="template.css">
 	<link rel="stylesheet" href="form-template.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>G26 Library - Delete Member by ID</title>	
+	<title>G26 Library - Delete Member</title>	
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 	
 	<br><br>
 	
-	<h2 class="page-title-heading">Delete a Member (by ID)</h2>
+	<h2 class="page-title-heading">Delete a Member</h2>
 	<hr class="page-heading-horizontal-line">
 	
 	<br><br>

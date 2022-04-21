@@ -82,9 +82,24 @@
 				</select><br>
 		</div>
 		
-		<button type="submit" form="updatemember-form" name="submit">Submit</button>
+		<button type="submit" form="updatemember-form" name="submit" onclick="allNum()">Submit</button>
 	
 	</form>
+	
+	<script>
+	function allNum() {
+		var numbers = /^[0-9]+$/;
+		let contact = document.forms["updatemember-form"]["update-member-contact"].value;
+		
+		if(/^[0-9]+$/.test(contact))
+		{
+			return true;
+		} else {
+			alert("Please fill in Contact Number with digits only.");
+			document.forms["updatemember-form"]["update-member-contact"].value = "";
+		}		
+	}
+	</script>
 	
 	<?php
 		$conn->close();

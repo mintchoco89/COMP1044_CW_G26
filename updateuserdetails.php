@@ -46,7 +46,7 @@
 		
 		if($result->num_rows > 0) {
 			echo "<p style='text-align: center; font-size: 150%; letter-spacing: 1px;'>Username already exists.<br>Update unsuccessful.<br>Redirecting to user profile.</p>";
-			header("Refresh: 3; url=profile.html");
+			header("Refresh: 3; url=profile.php");
 			
 		} else {
 			$sql = "UPDATE users SET username = '$username', firstname = '$firstname', lastname = '$lastname', password = '$password' WHERE user_id = '".$_SESSION['user_id']."'";
