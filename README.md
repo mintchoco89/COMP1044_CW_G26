@@ -6,4 +6,17 @@
 
 #### Website Name: G26 Library
 
-G26 Library is an online library system created by Group 26. Our library system requires users to login by using their user accounts in order to be granted full access to all the library services, such as the adding, searching, borrowing and returning processes. 
+G26 Library is an online library system created by Group 26. 
+
+Our library system requires users to login by using their user accounts in order to be granted full access to all the library services, such as the adding, searching, borrowing and returning processes. 
+
+#### Created Using
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScrpt</li>
+  <li>PHP</li>
+  <li>SQL</li>
+</ul>
+
+#### 
